@@ -68,5 +68,28 @@ export const Container = styled.div`
         }
       }
     }
+
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media only screen and (max-width: 465px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+  }
+
+  .loading {
+    img {
+      width: 150px;
+    }
+  }
+
+  .empty {
+    margin-top: 40px;
+    background: #d1e2f9;
+    padding: 20px 0;
+    border-radius: 4px;
+    border: 1px solid #b2cbec;
   }
 `;
